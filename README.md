@@ -15,7 +15,7 @@ The dataset originally contains 13 columns and 71,139 rows. They are in German b
 
 ## Repository Structure
     
-    ├── dataframes                                  # data folder: different datasets used for analysis.
+    ├── dataframes                                  # data folder: cleaned dataset (df3).
     ├── images                                      # data folder: project image/graph files
     ├── 1_cleaning-trees.ipynb                      # code for cleaning process
     ├── 2_eda-trees.ipynb                           # code for EDA
@@ -48,3 +48,4 @@ After cleaning the data,
 ## More 
 In this [trello board]("https://trello.com/invite/b/6751f9c08e8b980a0c723f23/ATTI1fa1a82074a3f6d8103801d41fe61d18E90ADF4D/trees"), you can follow my thoughts and steps during the project process.
 Please also find the project presentation in this repo for more insights.
+[Trees](images/trees-long-3.jpg)
