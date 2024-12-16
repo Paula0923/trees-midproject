@@ -1,5 +1,5 @@
 # Trees
-![Trees](trees-long-1.jpg)
+![Trees](images/trees-long-1.jpg)
 
 ## Overview
 This project is part of the Ironhack Data Analysis Course (August 2024 - February 2025). In the project, I am analysing a dataset about trees in the Rostock area (Northern Germany). Among others, I will be looking at the following questions:
