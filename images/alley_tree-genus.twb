@@ -1,0 +1,1899 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='df_tableau - Kopie+' inline='true' name='federated.0jfm4uu0znk6q418od8c81073sbr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_tableau - Kopie' name='textscan.092u8kj0vsp22v178eogd1jsbfcm'>
+            <connection class='textscan' directory='C:/Users/paula/01_Ironhack/projects/Individual Projects/midproject/trees' filename='df_tableau - Kopie.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.092u8kj0vsp22v178eogd1jsbfcm' name='df_tableau - Kopie.csv' table='[df_tableau - Kopie#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='de_DE'>
+              <column datatype='string' name='lat' ordinal='0' />
+              <column datatype='string' name='long' ordinal='1' />
+              <column datatype='string' name='genus' ordinal='2' />
+              <column datatype='string' name='species' ordinal='3' />
+              <column datatype='integer' name='alley_tree' ordinal='4' />
+              <column datatype='string' name='height' ordinal='5' />
+              <column datatype='string' name='trunk_circumference' ordinal='6' />
+              <column datatype='string' name='crown_diameter' ordinal='7' />
+              <column datatype='integer' name='sponsorship' ordinal='8' />
+              <column datatype='integer' name='variety' ordinal='9' />
+            </columns>
+          </relation>
+          <relation connection='textscan.092u8kj0vsp22v178eogd1jsbfcm' name='df_tableau.csv' table='[df_tableau#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='de_DE'>
+              <column datatype='string' name='lat' ordinal='0' />
+              <column datatype='string' name='long' ordinal='1' />
+              <column datatype='string' name='genus' ordinal='2' />
+              <column datatype='string' name='species' ordinal='3' />
+              <column datatype='integer' name='alley_tree' ordinal='4' />
+              <column datatype='string' name='height' ordinal='5' />
+              <column datatype='string' name='trunk_circumference' ordinal='6' />
+              <column datatype='string' name='crown_diameter' ordinal='7' />
+              <column datatype='integer' name='sponsorship' ordinal='8' />
+              <column datatype='integer' name='variety' ordinal='9' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[alley_tree (df_tableau.csv)]' value='[df_tableau.csv].[alley_tree]' />
+          <map key='[alley_tree]' value='[df_tableau - Kopie.csv].[alley_tree]' />
+          <map key='[crown_diameter (df_tableau.csv)]' value='[df_tableau.csv].[crown_diameter]' />
+          <map key='[crown_diameter]' value='[df_tableau - Kopie.csv].[crown_diameter]' />
+          <map key='[genus (df_tableau.csv)]' value='[df_tableau.csv].[genus]' />
+          <map key='[genus]' value='[df_tableau - Kopie.csv].[genus]' />
+          <map key='[height (df_tableau.csv)]' value='[df_tableau.csv].[height]' />
+          <map key='[height]' value='[df_tableau - Kopie.csv].[height]' />
+          <map key='[lat (df_tableau.csv)]' value='[df_tableau.csv].[lat]' />
+          <map key='[lat]' value='[df_tableau - Kopie.csv].[lat]' />
+          <map key='[long (df_tableau.csv)]' value='[df_tableau.csv].[long]' />
+          <map key='[long]' value='[df_tableau - Kopie.csv].[long]' />
+          <map key='[species (df_tableau.csv)]' value='[df_tableau.csv].[species]' />
+          <map key='[species]' value='[df_tableau - Kopie.csv].[species]' />
+          <map key='[sponsorship (df_tableau.csv)]' value='[df_tableau.csv].[sponsorship]' />
+          <map key='[sponsorship]' value='[df_tableau - Kopie.csv].[sponsorship]' />
+          <map key='[trunk_circumference (df_tableau.csv)]' value='[df_tableau.csv].[trunk_circumference]' />
+          <map key='[trunk_circumference]' value='[df_tableau - Kopie.csv].[trunk_circumference]' />
+          <map key='[variety (df_tableau.csv)]' value='[df_tableau.csv].[variety]' />
+          <map key='[variety]' value='[df_tableau - Kopie.csv].[variety]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>long</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[long]</local-name>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias>long</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genus]</local-name>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias>genus</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>species</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[species]</local-name>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias>species</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alley_tree</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[alley_tree]</local-name>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias>alley_tree</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[height]</local-name>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias>height</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trunk_circumference</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trunk_circumference]</local-name>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias>trunk_circumference</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crown_diameter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[crown_diameter]</local-name>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias>crown_diameter</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sponsorship</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sponsorship]</local-name>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias>sponsorship</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variety</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[variety]</local-name>
+            <parent-name>[df_tableau - Kopie.csv]</parent-name>
+            <remote-alias>variety</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lat (df_tableau.csv)]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>long</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[long (df_tableau.csv)]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>long</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genus (df_tableau.csv)]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>genus</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>species</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[species (df_tableau.csv)]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>species</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alley_tree</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[alley_tree (df_tableau.csv)]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>alley_tree</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[height (df_tableau.csv)]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>height</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trunk_circumference</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trunk_circumference (df_tableau.csv)]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>trunk_circumference</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crown_diameter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[crown_diameter (df_tableau.csv)]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>crown_diameter</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sponsorship</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sponsorship (df_tableau.csv)]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>sponsorship</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variety</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[variety (df_tableau.csv)]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>variety</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='df_tableau - Kopie.csv' datatype='table' name='[__tableau_internal_object_id__].[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]' role='measure' type='quantitative' />
+      <column caption='df_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]' role='measure' type='quantitative' />
+      <column caption='Alley Tree (Df Tableau.Csv)' datatype='integer' name='[alley_tree (df_tableau.csv)]' role='measure' type='quantitative' />
+      <column caption='Alley Tree' datatype='integer' name='[alley_tree]' role='measure' type='quantitative' />
+      <column caption='Crown Diameter (Df Tableau.Csv)' datatype='string' name='[crown_diameter (df_tableau.csv)]' role='dimension' type='nominal' />
+      <column caption='Crown Diameter' datatype='string' name='[crown_diameter]' role='dimension' type='nominal' />
+      <column caption='Genus (Df Tableau.Csv)' datatype='string' name='[genus (df_tableau.csv)]' role='dimension' type='nominal' />
+      <column caption='Genus' datatype='string' name='[genus]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;corylus&quot;' value='Hazel' />
+          <alias key='&quot;crataegus&quot;' value='Hawthorn' />
+          <alias key='&quot;platanus&quot;' value='Plane' />
+        </aliases>
+      </column>
+      <column caption='Height (Df Tableau.Csv)' datatype='string' name='[height (df_tableau.csv)]' role='dimension' type='nominal' />
+      <column caption='Height' datatype='string' name='[height]' role='dimension' type='nominal' />
+      <column caption='Lat (Df Tableau.Csv)' datatype='string' name='[lat (df_tableau.csv)]' role='dimension' type='nominal' />
+      <column caption='Lat' datatype='string' name='[lat]' role='dimension' type='nominal' />
+      <column caption='Long (Df Tableau.Csv)' datatype='string' name='[long (df_tableau.csv)]' role='dimension' type='nominal' />
+      <column caption='Long' datatype='string' name='[long]' role='dimension' type='nominal' />
+      <column caption='Species (Df Tableau.Csv)' datatype='string' name='[species (df_tableau.csv)]' role='dimension' type='nominal' />
+      <column caption='Species' datatype='string' name='[species]' role='dimension' type='nominal' />
+      <column caption='Sponsorship (Df Tableau.Csv)' datatype='integer' name='[sponsorship (df_tableau.csv)]' role='measure' type='quantitative' />
+      <column caption='Sponsorship' datatype='integer' name='[sponsorship]' role='measure' type='quantitative' />
+      <column caption='Trunk Circumference (Df Tableau.Csv)' datatype='string' name='[trunk_circumference (df_tableau.csv)]' role='dimension' type='nominal' />
+      <column caption='Trunk Circumference' datatype='string' name='[trunk_circumference]' role='dimension' type='nominal' />
+      <column caption='Variety (Df Tableau.Csv)' datatype='integer' name='[variety (df_tableau.csv)]' role='measure' type='quantitative' />
+      <column caption='Variety' datatype='integer' name='[variety]' role='measure' type='quantitative' />
+      <column-instance column='[genus]' derivation='None' name='[none:genus:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='de_DE' class='hyper' dbname='C:/Users/paula/AppData/Local/Temp/TableauTemp/#TableauTemp_0o8x8em1d02mci1ci08z315xm8tb.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/17/2024 06:29:44 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D' table='[Extract].[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]' type='table' />
+            <relation name='df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017' table='[Extract].[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]' type='table' />
+          </relation>
+          <cols>
+            <map key='[alley_tree (df_tableau.csv)]' value='[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017].[alley_tree]' />
+            <map key='[alley_tree]' value='[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D].[alley_tree]' />
+            <map key='[crown_diameter (df_tableau.csv)]' value='[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017].[crown_diameter]' />
+            <map key='[crown_diameter]' value='[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D].[crown_diameter]' />
+            <map key='[genus (df_tableau.csv)]' value='[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017].[genus]' />
+            <map key='[genus]' value='[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D].[genus]' />
+            <map key='[height (df_tableau.csv)]' value='[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017].[height]' />
+            <map key='[height]' value='[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D].[height]' />
+            <map key='[lat (df_tableau.csv)]' value='[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017].[lat]' />
+            <map key='[lat]' value='[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D].[lat]' />
+            <map key='[long (df_tableau.csv)]' value='[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017].[long]' />
+            <map key='[long]' value='[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D].[long]' />
+            <map key='[species (df_tableau.csv)]' value='[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017].[species]' />
+            <map key='[species]' value='[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D].[species]' />
+            <map key='[sponsorship (df_tableau.csv)]' value='[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017].[sponsorship]' />
+            <map key='[sponsorship]' value='[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D].[sponsorship]' />
+            <map key='[trunk_circumference (df_tableau.csv)]' value='[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017].[trunk_circumference]' />
+            <map key='[trunk_circumference]' value='[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D].[trunk_circumference]' />
+            <map key='[variety (df_tableau.csv)]' value='[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017].[variety]' />
+            <map key='[variety]' value='[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D].[variety]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>lat</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[lat]</local-name>
+              <parent-name>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</parent-name>
+              <remote-alias>lat</remote-alias>
+              <ordinal>0</ordinal>
+              <family>df_tableau - Kopie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>69353</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>long</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[long]</local-name>
+              <parent-name>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</parent-name>
+              <remote-alias>long</remote-alias>
+              <ordinal>1</ordinal>
+              <family>df_tableau - Kopie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>69353</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genus]</local-name>
+              <parent-name>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</parent-name>
+              <remote-alias>genus</remote-alias>
+              <ordinal>2</ordinal>
+              <family>df_tableau - Kopie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>species</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[species]</local-name>
+              <parent-name>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</parent-name>
+              <remote-alias>species</remote-alias>
+              <ordinal>3</ordinal>
+              <family>df_tableau - Kopie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>303</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>alley_tree</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[alley_tree]</local-name>
+              <parent-name>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</parent-name>
+              <remote-alias>alley_tree</remote-alias>
+              <ordinal>4</ordinal>
+              <family>df_tableau - Kopie.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>height</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[height]</local-name>
+              <parent-name>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</parent-name>
+              <remote-alias>height</remote-alias>
+              <ordinal>5</ordinal>
+              <family>df_tableau - Kopie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trunk_circumference</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trunk_circumference]</local-name>
+              <parent-name>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</parent-name>
+              <remote-alias>trunk_circumference</remote-alias>
+              <ordinal>6</ordinal>
+              <family>df_tableau - Kopie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>926</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>crown_diameter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[crown_diameter]</local-name>
+              <parent-name>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</parent-name>
+              <remote-alias>crown_diameter</remote-alias>
+              <ordinal>7</ordinal>
+              <family>df_tableau - Kopie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>226</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sponsorship</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sponsorship]</local-name>
+              <parent-name>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</parent-name>
+              <remote-alias>sponsorship</remote-alias>
+              <ordinal>8</ordinal>
+              <family>df_tableau - Kopie.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>variety</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[variety]</local-name>
+              <parent-name>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</parent-name>
+              <remote-alias>variety</remote-alias>
+              <ordinal>9</ordinal>
+              <family>df_tableau - Kopie.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lat</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[lat (df_tableau.csv)]</local-name>
+              <parent-name>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</parent-name>
+              <remote-alias>lat</remote-alias>
+              <ordinal>10</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>69353</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>long</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[long (df_tableau.csv)]</local-name>
+              <parent-name>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</parent-name>
+              <remote-alias>long</remote-alias>
+              <ordinal>11</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>69353</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genus (df_tableau.csv)]</local-name>
+              <parent-name>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</parent-name>
+              <remote-alias>genus</remote-alias>
+              <ordinal>12</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>species</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[species (df_tableau.csv)]</local-name>
+              <parent-name>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</parent-name>
+              <remote-alias>species</remote-alias>
+              <ordinal>13</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>303</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>alley_tree</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[alley_tree (df_tableau.csv)]</local-name>
+              <parent-name>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</parent-name>
+              <remote-alias>alley_tree</remote-alias>
+              <ordinal>14</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>height</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[height (df_tableau.csv)]</local-name>
+              <parent-name>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</parent-name>
+              <remote-alias>height</remote-alias>
+              <ordinal>15</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trunk_circumference</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trunk_circumference (df_tableau.csv)]</local-name>
+              <parent-name>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</parent-name>
+              <remote-alias>trunk_circumference</remote-alias>
+              <ordinal>16</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>926</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>crown_diameter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[crown_diameter (df_tableau.csv)]</local-name>
+              <parent-name>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</parent-name>
+              <remote-alias>crown_diameter</remote-alias>
+              <ordinal>17</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>226</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sponsorship</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sponsorship (df_tableau.csv)]</local-name>
+              <parent-name>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</parent-name>
+              <remote-alias>sponsorship</remote-alias>
+              <ordinal>18</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>variety</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[variety (df_tableau.csv)]</local-name>
+              <parent-name>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</parent-name>
+              <remote-alias>variety</remote-alias>
+              <ordinal>19</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:genus:nk]' type='palette'>
+            <map to='#053661'>
+              <bucket>&quot;Lime&quot;</bucket>
+            </map>
+            <map to='#116985'>
+              <bucket>&quot;crataegus&quot;</bucket>
+            </map>
+            <map to='#27aab0'>
+              <bucket>&quot;corylus&quot;</bucket>
+            </map>
+            <map to='#27aab0'>
+              <bucket>&quot;Rowan&quot;</bucket>
+            </map>
+            <map to='#51d2bb'>
+              <bucket>&quot;Cherry&quot;</bucket>
+            </map>
+            <map to='#51d2bb'>
+              <bucket>&quot;platanus&quot;</bucket>
+            </map>
+            <map to='#94e7a8'>
+              <bucket>&quot;Birch&quot;</bucket>
+            </map>
+            <map to='#94e7a8'>
+              <bucket>&quot;Oak&quot;</bucket>
+            </map>
+            <map to='#c7f296'>
+              <bucket>&quot;Ash&quot;</bucket>
+            </map>
+            <map to='#c7f296'>
+              <bucket>&quot;Maple&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='df_tableau - Kopie.csv' id='df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D'>
+            <properties context=''>
+              <relation connection='textscan.092u8kj0vsp22v178eogd1jsbfcm' name='df_tableau - Kopie.csv' table='[df_tableau - Kopie#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='string' name='lat' ordinal='0' />
+                  <column datatype='string' name='long' ordinal='1' />
+                  <column datatype='string' name='genus' ordinal='2' />
+                  <column datatype='string' name='species' ordinal='3' />
+                  <column datatype='integer' name='alley_tree' ordinal='4' />
+                  <column datatype='string' name='height' ordinal='5' />
+                  <column datatype='string' name='trunk_circumference' ordinal='6' />
+                  <column datatype='string' name='crown_diameter' ordinal='7' />
+                  <column datatype='integer' name='sponsorship' ordinal='8' />
+                  <column datatype='integer' name='variety' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D' table='[Extract].[df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D]' type='table' />
+            </properties>
+          </object>
+          <object caption='df_tableau.csv' id='df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017'>
+            <properties context=''>
+              <relation connection='textscan.092u8kj0vsp22v178eogd1jsbfcm' name='df_tableau.csv' table='[df_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='string' name='lat' ordinal='0' />
+                  <column datatype='string' name='long' ordinal='1' />
+                  <column datatype='string' name='genus' ordinal='2' />
+                  <column datatype='string' name='species' ordinal='3' />
+                  <column datatype='integer' name='alley_tree' ordinal='4' />
+                  <column datatype='string' name='height' ordinal='5' />
+                  <column datatype='string' name='trunk_circumference' ordinal='6' />
+                  <column datatype='string' name='crown_diameter' ordinal='7' />
+                  <column datatype='integer' name='sponsorship' ordinal='8' />
+                  <column datatype='integer' name='variety' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017' table='[Extract].[df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[genus]' />
+              <expression op='[genus (df_tableau.csv)]' />
+            </expression>
+            <first-end-point object-id='df_tableau - Kopie.csv_4F4A065B62A84E9D8D2010065F59813D' />
+            <second-end-point object-id='df_tableau.csv_72ABA01941ED4A49A8818AEBC9AA7017' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='df_tableau' inline='true' name='federated.025u9fv0ep26x71b9sgol0qdyq38' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_tableau' name='textscan.1qd7iwp0dme7tr1cg8wdx1hjb6r8'>
+            <connection class='textscan' directory='C:/Users/paula/01_Ironhack/projects/Individual Projects/midproject/trees/trees-midproject/dataframes' filename='df_tableau.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1qd7iwp0dme7tr1cg8wdx1hjb6r8' name='df_tableau.csv' table='[df_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE'>
+            <column datatype='string' name='lat' ordinal='0' />
+            <column datatype='string' name='long' ordinal='1' />
+            <column datatype='string' name='genus' ordinal='2' />
+            <column datatype='string' name='species' ordinal='3' />
+            <column datatype='integer' name='alley_tree' ordinal='4' />
+            <column datatype='string' name='height' ordinal='5' />
+            <column datatype='string' name='trunk_circumference' ordinal='6' />
+            <column datatype='string' name='crown_diameter' ordinal='7' />
+            <column datatype='integer' name='sponsorship' ordinal='8' />
+            <column datatype='integer' name='variety' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>long</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[long]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>long</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genus]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>genus</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>species</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[species]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>species</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alley_tree</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[alley_tree]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>alley_tree</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[height]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>height</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trunk_circumference</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trunk_circumference]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>trunk_circumference</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crown_diameter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[crown_diameter]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>crown_diameter</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sponsorship</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sponsorship]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>sponsorship</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variety</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[variety]</local-name>
+            <parent-name>[df_tableau.csv]</parent-name>
+            <remote-alias>variety</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='df_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]' role='measure' type='quantitative' />
+      <column caption='Alley Tree' datatype='integer' datatype-customized='true' default-format='N' name='[alley_tree]' role='dimension' type='ordinal' />
+      <column caption='Crown Diameter' datatype='real' datatype-customized='true' name='[crown_diameter]' role='measure' type='quantitative' />
+      <column caption='Genus' datatype='string' name='[genus]' role='dimension' type='nominal' />
+      <column caption='Height' datatype='real' datatype-customized='true' name='[height]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Lat' datatype='real' datatype-customized='true' name='[lat]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Long' datatype='real' datatype-customized='true' name='[long]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Species' datatype='string' name='[species]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Sponsorship' datatype='integer' name='[sponsorship]' role='dimension' type='ordinal' />
+      <column caption='Trunk Circumference' datatype='real' datatype-customized='true' name='[trunk_circumference]' role='measure' type='quantitative' />
+      <column caption='Variety' datatype='string' datatype-customized='true' name='[variety]' role='dimension' type='nominal' />
+      <column-instance column='[alley_tree]' derivation='None' name='[none:alley_tree:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='de_DE' class='hyper' dbname='C:/Users/paula/AppData/Local/Temp/TableauTemp/#TableauTemp_0q083b902idn1q16u66em1v2a4gi.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/17/2024 06:28:51 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='df_tableau' increment-value='%null%' refresh-type='create' rows-inserted='69284' timestamp-start='2024-12-17 18:28:51.232' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lat</remote-alias>
+              <ordinal>0</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69284</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>long</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[long]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>long</remote-alias>
+              <ordinal>1</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69284</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genus</remote-alias>
+              <ordinal>2</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>76</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>species</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[species]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>species</remote-alias>
+              <ordinal>3</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>271</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>alley_tree</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[alley_tree]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>alley_tree</remote-alias>
+              <ordinal>4</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>height</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[height]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>height</remote-alias>
+              <ordinal>5</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>182</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trunk_circumference</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[trunk_circumference]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trunk_circumference</remote-alias>
+              <ordinal>6</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>854</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>crown_diameter</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[crown_diameter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>crown_diameter</remote-alias>
+              <ordinal>7</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>260</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sponsorship</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sponsorship]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sponsorship</remote-alias>
+              <ordinal>8</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>variety</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[variety]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>variety</remote-alias>
+              <ordinal>9</ordinal>
+              <family>df_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:alley_tree:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='df_tableau.csv' id='df_tableau.csv_0A0BF9C3BE01473BA44A8A17A3CD5D07'>
+            <properties context=''>
+              <relation connection='textscan.1qd7iwp0dme7tr1cg8wdx1hjb6r8' name='df_tableau.csv' table='[df_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='string' name='lat' ordinal='0' />
+                  <column datatype='string' name='long' ordinal='1' />
+                  <column datatype='string' name='genus' ordinal='2' />
+                  <column datatype='string' name='species' ordinal='3' />
+                  <column datatype='integer' name='alley_tree' ordinal='4' />
+                  <column datatype='string' name='height' ordinal='5' />
+                  <column datatype='string' name='trunk_circumference' ordinal='6' />
+                  <column datatype='string' name='crown_diameter' ordinal='7' />
+                  <column datatype='integer' name='sponsorship' ordinal='8' />
+                  <column datatype='integer' name='variety' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Blatt 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#845551'>Alley Trees by Genus</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_tableau - Kopie+' name='federated.0jfm4uu0znk6q418od8c81073sbr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jfm4uu0znk6q418od8c81073sbr'>
+            <column caption='Alley Tree (Df Tableau.Csv)' datatype='integer' name='[alley_tree (df_tableau.csv)]' role='measure' type='quantitative' />
+            <column caption='Alley Tree' datatype='integer' name='[alley_tree]' role='measure' type='quantitative' />
+            <column caption='Genus' datatype='string' name='[genus]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;corylus&quot;' value='Hazel' />
+                <alias key='&quot;crataegus&quot;' value='Hawthorn' />
+                <alias key='&quot;platanus&quot;' value='Plane' />
+              </aliases>
+            </column>
+            <column-instance column='[genus]' derivation='None' name='[none:genus:nk]' pivot='key' type='nominal' />
+            <column-instance column='[alley_tree (df_tableau.csv)]' derivation='Sum' name='[sum:alley_tree (df_tableau.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[alley_tree]' derivation='Sum' name='[sum:alley_tree:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0jfm4uu0znk6q418od8c81073sbr].[none:genus:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:genus:nk]' member='&quot;Ash&quot;' />
+              <groupfilter function='member' level='[none:genus:nk]' member='&quot;Birch&quot;' />
+              <groupfilter function='member' level='[none:genus:nk]' member='&quot;Cherry&quot;' />
+              <groupfilter function='member' level='[none:genus:nk]' member='&quot;corylus&quot;' />
+              <groupfilter function='member' level='[none:genus:nk]' member='&quot;crataegus&quot;' />
+              <groupfilter function='member' level='[none:genus:nk]' member='&quot;Lime&quot;' />
+              <groupfilter function='member' level='[none:genus:nk]' member='&quot;Maple&quot;' />
+              <groupfilter function='member' level='[none:genus:nk]' member='&quot;Oak&quot;' />
+              <groupfilter function='member' level='[none:genus:nk]' member='&quot;platanus&quot;' />
+              <groupfilter function='member' level='[none:genus:nk]' member='&quot;Rowan&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0jfm4uu0znk6q418od8c81073sbr].[none:genus:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Lime&quot;</bucket>
+              <bucket>&quot;Maple&quot;</bucket>
+              <bucket>&quot;Rowan&quot;</bucket>
+              <bucket>&quot;Ash&quot;</bucket>
+              <bucket>&quot;corylus&quot;</bucket>
+              <bucket>&quot;Birch&quot;</bucket>
+              <bucket>&quot;Oak&quot;</bucket>
+              <bucket>&quot;Cherry&quot;</bucket>
+              <bucket>&quot;crataegus&quot;</bucket>
+              <bucket>&quot;platanus&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]' included-values='all' />
+          <filter class='quantitative' column='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree:qk]' included-values='all' />
+          <slices>
+            <column>[federated.0jfm4uu0znk6q418od8c81073sbr].[none:genus:nk]</column>
+            <column>[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]</column>
+            <column>[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]' scope='rows' value='Alley Trees' />
+            <format attr='height' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[none:genus:nk]' value='95' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[none:genus:nk]' value='59' />
+            <format attr='color' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]' value='#845551' />
+            <format attr='font-style' data-class='total' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]' value='normal' />
+            <format attr='font-style' data-class='subtotal' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]' value='normal' />
+            <format attr='font-size' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]' value='9' />
+            <format attr='color' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree:qk]' value='#845551' />
+            <format attr='color' data-class='subtotal' scope='rows' value='#845551' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='total' scope='rows' value='#845551' />
+            <format attr='color' data-class='subtotal' scope='rows' value='#845551' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]' value='#845551' />
+            <format attr='font-size' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]' value='12' />
+            <format attr='color' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree:qk]' value='#845551' />
+            <format attr='color' scope='rows' value='#845551' />
+            <format attr='color' scope='cols' value='#845551' />
+            <format attr='wrap' scope='cols' value='off' />
+            <format attr='vertical-align' scope='cols' value='bottom' />
+            <format attr='text-align' scope='cols' value='right' />
+            <format attr='text-orientation' scope='cols' value='90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ced8be' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0jfm4uu0znk6q418od8c81073sbr].[none:genus:nk]' />
+              <text column='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]' />
+              <lod column='[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0jfm4uu0znk6q418od8c81073sbr].[sum:alley_tree (df_tableau.csv):qk]</rows>
+        <cols>[federated.0jfm4uu0znk6q418od8c81073sbr].[none:genus:nk]</cols>
+      </table>
+      <simple-id uuid='{FBFF7747-4B2B-42BA-A975-DA1CA2A27FDC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97616' id='3' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1192' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A196AAF1-AE0F-448A-9A2C-9EC6C260B124}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97612' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1194'>
+            <zone h='97612' id='5' type-v2='layout-basic' w='97538' x='1231' y='1194'>
+              <zone h='97612' id='3' name='Blatt 1' w='97538' x='1231' y='1194'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97612' id='8' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1194'>
+                <zone fixed-size='280' h='97612' id='3' is-fixed='true' name='Blatt 1' w='97538' x='1231' y='1194'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E028F56B-2C1E-44BA-9B16-6BECB6D3DCAC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Blatt 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='44'>
+            <card type='columns' />
+          </strip>
+          <strip size='44'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.025u9fv0ep26x71b9sgol0qdyq38].[:Measure Names]</field>
+            <field>[federated.025u9fv0ep26x71b9sgol0qdyq38].[none:alley_tree:nk]</field>
+            <field>[federated.025u9fv0ep26x71b9sgol0qdyq38].[none:alley_tree:ok]</field>
+            <field>[federated.025u9fv0ep26x71b9sgol0qdyq38].[none:genus:nk]</field>
+            <field>[federated.025u9fv0ep26x71b9sgol0qdyq38].[none:sponsorship:ok]</field>
+            <field>[federated.0jfm4uu0znk6q418od8c81073sbr].[:Measure Names]</field>
+            <field>[federated.0jfm4uu0znk6q418od8c81073sbr].[none:genus:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{41593476-6551-455D-90FF-2C707921713B}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{D9D19A67-7D87-49DB-A64D-86223C2448BB}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Blatt 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B55C3CA1-434C-474A-8A18-0A4CE96CED9D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Blatt 1' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACF0lEQVR4nO3TMQEAIAzAMIZ/z0MGRxMFfTq7uweCZmbu7wj4yQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYg
+      zQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIM
+      QJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCk
+      GYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSHtb
+      egWA0FAUAAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 2' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
