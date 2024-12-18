@@ -21,7 +21,6 @@ The data includes genus and species and the measurements of the trees, if they a
     ├── 1_cleaning-trees.ipynb                      # code for cleaning process
     ├── 2_eda-trees.ipynb                           # code for EDA
     ├── 3_inferential-trees.ipynb                   # code for inferential statistics
-    ├── 4_classification-trees.ipynb                # code for classification
     ├── metadata-trees.rdf                          # text file for meta data on dataset
     ├── presentation                                # pdf with the project presentation
     └── README.md
@@ -38,6 +37,7 @@ The most challenging part in cleaning the data was some unrealistically high dat
 - Sponsored trees are lower and have a smaller trunk circumference than non-sponsored trees.
 - Genus and alley tree are significantly and strongly correlated, some tree genera are much more likely to be part of an alley than others. In absolute numbers, lime trees stick out, followed by maple trees. In proportional terms (share within an genera that are alley trees), two trees have an even higher share than lime trees: The Japanese pagoda tree and the maidenhair tree.
 - t-tests showed that sponsored trees are significantly lower than trees without a sponsorship (and, to a lesser degree, have a smaller trunk circumference). Possible reasons for this are speculative but one could be that trees with a sponsorship might be younger. Unfortunately, there is no data regarding the ages of the trees. An obvious reason would be if there was a significant connection between tree genera and sponsorship: if specific lower tree genera were more likely to have a sponsorship. Yet, this was checked in the EDA and is not the case. So for now, the most likely reason could be that younger trees are more often sponsored.
+- another set of t-tests also showed that alley trees are lower and smaller than non-alley trees. As described before, if a tree is part of an alley or not highly correlates with the genus, so here we have an obvious reason for the significant results of the t-tests.
 
 In this [trello board](https://trello.com/invite/b/6751f9c08e8b980a0c723f23/ATTI1fa1a82074a3f6d8103801d41fe61d18E90ADF4D/trees), you can follow my thoughts and steps during the project process.
 Please also find the project presentation in this repo for more insights.
